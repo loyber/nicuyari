@@ -106,6 +106,23 @@ body{font-family:'Jost',sans-serif;font-weight:300;background:#faf6f0;color:#3a2
   transition:background .25s,border-color .25s;
 }
 .hero-rsvp-btn:hover{background:rgba(253,248,242,.15);border-color:#fdf8f2}
+.hero-rsvp-btn-ari{
+  display:inline-block;
+  margin-top:2rem;
+  padding:.75rem 2.4rem;
+  border:1px solid rgba(253,248,242,.65);
+  color:#201b15;
+  background-color: #c4a882;
+  font-family:'Jost',sans-serif;
+  font-size:10px;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  text-decoration:none;
+  opacity:0;
+  animation:fadeUp .8s 1.2s cubic-bezier(.16,1,.3,1) forwards;
+  transition:background .25s,border-color .25s;
+}
+.hero-rsvp-btn-ari:hover{background:#d9c19f;border-color:#fdf8f2}
 .hero-rsvp-btn{
   display:inline-block;
   margin-top:1.8rem;
@@ -345,7 +362,7 @@ footer{background:#3a2f26;padding:3rem 2rem;text-align:center}
   .tl-photo-mobile{
     grid-column:2;grid-row:2;
     display:block;
-  }
+  } 
   .tl-photo-mobile .tl-photo{
     max-width:100%;width:100%;
     aspect-ratio:3/4;object-fit:cover;margin-left:0;
@@ -370,7 +387,9 @@ footer{background:#3a2f26;padding:3rem 2rem;text-align:center}
     </h1>
     <p class="hero-tagline">¡Nos casamos!</p>
     <p class="hero-sub">y nos encantaría compartir este día tan especial con vos.</p>
-    <a class="hero-rsvp-btn" href="#fecha">Más info</a>
+    <a class="hero-rsvp-btn-ari" href="#fecha">Fecha y horario</a>
+    <a class="hero-rsvp-btn" href="#lugar">Info lugar</a>
+    <a class="hero-rsvp-btn" href="#regalos">Info regalos</a>
   </div>
   <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
 </section>
@@ -389,7 +408,7 @@ footer{background:#3a2f26;padding:3rem 2rem;text-align:center}
     </div>
     <p class="fecha-eyebrow reveal">Agendá la fecha</p>
     <p class="fecha-day reveal d1">Domingo 8 de Noviembre</p>
-    <p class="fecha-hora reveal d2">12:00 hs</p>
+    <p class="fecha-hora reveal d2">15:00 hs</p>
     <p class="fecha-hora reveal d2 ceremonia">Inicio de ceremonia</p>
     <p class="cd-label reveal d2">...</p>
     <div class="cd-grid reveal d2">
@@ -411,7 +430,7 @@ footer{background:#3a2f26;padding:3rem 2rem;text-align:center}
 </section>
 
 <!-- ══ 3. LUGAR ══ -->
-<section class="lugar-section">
+<section id="lugar" class="lugar-section">
   <div class="lugar-inner">
     <div class="sec-icon reveal">
       <svg class="icon-anim" viewBox="0 0 24 24">
@@ -450,7 +469,7 @@ footer{background:#3a2f26;padding:3rem 2rem;text-align:center}
 </section>
 
 <!-- ══ 4b. REGALOS ══ -->
-<section class="gifts-section">
+<section id="regalos" class="gifts-section">
   <div class="gifts-inner">
     <div class="sec-icon reveal">
       <svg class="icon-anim" viewBox="0 0 24 24">
@@ -476,7 +495,7 @@ footer{background:#3a2f26;padding:3rem 2rem;text-align:center}
     <h3 class="modal-title">Una pequeña confesión...</h3>
     <div class="modal-body">
       <p>Vivimos en España, así que —como imaginarán— traer regalos físicos en valija tiene su propio nivel de aventura logística.</p><br>
-      <p>Si desean hacernos un regalo, <strong>el efectivo es nuestra opción favorita</strong>: va directo al fondo del viaje, la casita, o la próxima aventura que nos espera juntos.</p><br>
+      <p>Si desean hacernos un regalo, <strong>el efectivo es nuestra opción favorita</strong>: va directo a la luna de miel, la casita, o la próxima aventura que nos espera juntos.</p><br>
       <p>Y si les resulta más comodo hacer una transferencia, pueden escribirnos y les pasamos los datos bancarios. ✨</p><br>
       <p>Cualquier gesto, grande o pequeño, significa muchísimo para nosotros.</p><br>
       <p style="color:#a08872;font-style:italic">Lo más importante igualmente es que estén con nosotros ese día. ❤️</p>

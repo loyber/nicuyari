@@ -681,8 +681,8 @@ function addToCalendar(e){
   const det=encodeURIComponent('¡Los invitamos a celebrar nuestra boda!');
   if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
     const ics=['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT',
-      'DTSTART;TZID=America/Argentina/Buenos_Aires:20261108T120000',
-      'DTEND;TZID=America/Argentina/Buenos_Aires:20261108T210000',
+      'DTSTART;TZID=America/Argentina/Buenos_Aires:20261108T150000',
+      'DTEND;TZID=America/Argentina/Buenos_Aires:20261109T000000',
       'SUMMARY:Boda de Ari & Nicu',
       'LOCATION:Estancia Lupita, Gral. Viamonte 2298, Pilar',
       'DESCRIPTION:¡Los invitamos a celebrar nuestra boda!',
@@ -691,7 +691,7 @@ function addToCalendar(e){
     a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));
     a.download='boda-ari-nicu.ics';a.click();
   }else{
-    window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261108T120000/20261108T210000&details=${det}&location=${loc}`,'_blank');
+    window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261108T150000/20261109T000000&details=${det}&location=${loc}`,'_blank');
   }
 }
 </script>
